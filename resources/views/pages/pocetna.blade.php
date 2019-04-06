@@ -37,5 +37,6 @@
 
             </div>
         @endforeach
+        {{$serije->links()}}
     </div>
 @endsection

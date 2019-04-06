@@ -513,3 +513,20 @@ footer a{
 .big{
     padding-bottom:20px;
 }
+.pagination{
+    display:flex;
+    flex:1;
+    justify-self: center;
+    justify-content: space-between;
+}
+.pagination > li {
+    justify-content: space-around;
+    padding:20px;
+    margin-top:30px;
+}
+.pagination  span{
+    background: #1b4b72;
+    color: white;
+    padding:15px;
+    font-size:18px;
+}

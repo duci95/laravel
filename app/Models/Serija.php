@@ -255,7 +255,7 @@ class Serija
         return $query;
     }
     public function getNewestSeries(){
-        $query = DB::table($this->table)->limit(5)->where('serija.obrisan','=',0)->orderBy("godina", "desc")->get();
+        $query = DB::table($this->table)->where('serija.obrisan','=',0)->orderBy("godina", "desc")->paginate(2);
         return $query;
     }
 
@@ -303,8 +303,6 @@ class Serija
                    ->where('obrisan',"=",0)
                    ->get();
     }
-
-
 
     public function delete(){
         DB::table($this->table)
