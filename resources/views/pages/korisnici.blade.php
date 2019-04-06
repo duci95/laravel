@@ -2,7 +2,7 @@
 @section('title', 'Spisak korisnika')
 @section('content')
     <div id="users">
-        @foreach ($korisnici as $korisnik)
+        @foreach($korisnici as $korisnik)
         <div class="item">
             <p class="key" >Ime</p>
             <p class="value">{{$korisnik->ime}}</p>
@@ -31,6 +31,7 @@
         </div>
         @endforeach
     </div>
+    {{$korisnici->links()}}
     <footer>
         <h5><a  href="{{route('pocetna')}}">Nazad na početnu stranu</a></h5>
     </footer>

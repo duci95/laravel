@@ -308,3 +308,21 @@ input[type='radio']{
 .root{
     font-weight: bolder;
 }
+.pagination{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+.pagination > li {
+    justify-content: space-around;
+    padding:20px;
+    margin-top:30px;
+}
+.pagination  span{
+    background: #1b4b72;
+    color: white;
+    padding:15px;
+    font-size:18px;
+
+}

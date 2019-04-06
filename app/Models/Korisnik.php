@@ -272,7 +272,7 @@ class Korisnik
         return $query;
     }
     public function getUsers(){
-        $query = DB::table($this->table)->get();
+        $query = DB::table($this->table)->paginate(6);
         return $query;
     }
     public function insert(){

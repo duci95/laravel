@@ -240,7 +240,7 @@ class Serija
      * @return string
      */
     public function getAll(){
-        return DB::table($this->table)->get();
+        return DB::table($this->table)->paginate(6);
     }
     public function getSeriesByCategory(){
         $query = DB::table($this->table)
