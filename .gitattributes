@@ -4,4 +4,4 @@
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 *.php linguist-detectable=false
-*.laravel linguist-detectable=true
+*.laravel-framework linguist-detectable=true
